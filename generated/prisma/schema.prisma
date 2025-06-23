@@ -12,13 +12,13 @@ datasource db {
 }
 
 model userInfo {
-  id                Int      @id @default(autoincrement())
+  id                Int    @id @default(autoincrement())
   fullName          String
-  email             String   @unique
+  email             String @unique
   password          String
   CPF               String
-  socialReason      String   @unique //razão social
-  StateRegistration String   @unique // registro estadual
+  socialReason      String @unique //razão social
+  StateRegistration String @unique // registro estadual
   CNPJ              String
   CEP               String
   UF                String
@@ -28,14 +28,14 @@ model userInfo {
   numberHouse       Int
   complement        String
   numberPhone       String
-  dateOfBirth       DateTime
+  dateOfBirth       String
 }
 
 model Products {
   id          Int    @id @default(autoincrement())
   name        String
   description String
-  measures    Float
+  measures    String
   price       Float
   image       String
 }

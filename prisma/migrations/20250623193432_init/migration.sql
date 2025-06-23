@@ -16,7 +16,7 @@ CREATE TABLE "userInfo" (
     "numberHouse" INTEGER NOT NULL,
     "complement" TEXT NOT NULL,
     "numberPhone" TEXT NOT NULL,
-    "dateOfBirth" DATETIME NOT NULL
+    "dateOfBirth" TEXT NOT NULL
 );
 
 -- CreateTable
@@ -24,7 +24,7 @@ CREATE TABLE "Products" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "measures" REAL NOT NULL,
+    "measures" TEXT NOT NULL,
     "price" REAL NOT NULL,
     "image" TEXT NOT NULL
 );

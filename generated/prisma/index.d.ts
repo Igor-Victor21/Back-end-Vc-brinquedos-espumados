@@ -999,7 +999,7 @@ export namespace Prisma {
     numberHouse: number | null
     complement: string | null
     numberPhone: string | null
-    dateOfBirth: Date | null
+    dateOfBirth: string | null
   }
 
   export type UserInfoMaxAggregateOutputType = {
@@ -1019,7 +1019,7 @@ export namespace Prisma {
     numberHouse: number | null
     complement: string | null
     numberPhone: string | null
-    dateOfBirth: Date | null
+    dateOfBirth: string | null
   }
 
   export type UserInfoCountAggregateOutputType = {
@@ -1218,7 +1218,7 @@ export namespace Prisma {
     numberHouse: number
     complement: string
     numberPhone: string
-    dateOfBirth: Date
+    dateOfBirth: string
     _count: UserInfoCountAggregateOutputType | null
     _avg: UserInfoAvgAggregateOutputType | null
     _sum: UserInfoSumAggregateOutputType | null
@@ -1342,7 +1342,7 @@ export namespace Prisma {
       numberHouse: number
       complement: string
       numberPhone: string
-      dateOfBirth: Date
+      dateOfBirth: string
     }, ExtArgs["result"]["userInfo"]>
     composites: {}
   }
@@ -1782,7 +1782,7 @@ export namespace Prisma {
     readonly numberHouse: FieldRef<"userInfo", 'Int'>
     readonly complement: FieldRef<"userInfo", 'String'>
     readonly numberPhone: FieldRef<"userInfo", 'String'>
-    readonly dateOfBirth: FieldRef<"userInfo", 'DateTime'>
+    readonly dateOfBirth: FieldRef<"userInfo", 'String'>
   }
     
 
@@ -2161,13 +2161,11 @@ export namespace Prisma {
 
   export type ProductsAvgAggregateOutputType = {
     id: number | null
-    measures: number | null
     price: number | null
   }
 
   export type ProductsSumAggregateOutputType = {
     id: number | null
-    measures: number | null
     price: number | null
   }
 
@@ -2175,7 +2173,7 @@ export namespace Prisma {
     id: number | null
     name: string | null
     description: string | null
-    measures: number | null
+    measures: string | null
     price: number | null
     image: string | null
   }
@@ -2184,7 +2182,7 @@ export namespace Prisma {
     id: number | null
     name: string | null
     description: string | null
-    measures: number | null
+    measures: string | null
     price: number | null
     image: string | null
   }
@@ -2202,13 +2200,11 @@ export namespace Prisma {
 
   export type ProductsAvgAggregateInputType = {
     id?: true
-    measures?: true
     price?: true
   }
 
   export type ProductsSumAggregateInputType = {
     id?: true
-    measures?: true
     price?: true
   }
 
@@ -2330,7 +2326,7 @@ export namespace Prisma {
     id: number
     name: string
     description: string
-    measures: number
+    measures: string
     price: number
     image: string
     _count: ProductsCountAggregateOutputType | null
@@ -2399,7 +2395,7 @@ export namespace Prisma {
       id: number
       name: string
       description: string
-      measures: number
+      measures: string
       price: number
       image: string
     }, ExtArgs["result"]["products"]>
@@ -2828,7 +2824,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Products", 'Int'>
     readonly name: FieldRef<"Products", 'String'>
     readonly description: FieldRef<"Products", 'String'>
-    readonly measures: FieldRef<"Products", 'Float'>
+    readonly measures: FieldRef<"Products", 'String'>
     readonly price: FieldRef<"Products", 'Float'>
     readonly image: FieldRef<"Products", 'String'>
   }
@@ -3269,13 +3265,6 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'DateTime'
-   */
-  export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
-    
-
-
-  /**
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
@@ -3305,7 +3294,7 @@ export namespace Prisma {
     numberHouse?: IntFilter<"userInfo"> | number
     complement?: StringFilter<"userInfo"> | string
     numberPhone?: StringFilter<"userInfo"> | string
-    dateOfBirth?: DateTimeFilter<"userInfo"> | Date | string
+    dateOfBirth?: StringFilter<"userInfo"> | string
   }
 
   export type userInfoOrderByWithRelationInput = {
@@ -3348,7 +3337,7 @@ export namespace Prisma {
     numberHouse?: IntFilter<"userInfo"> | number
     complement?: StringFilter<"userInfo"> | string
     numberPhone?: StringFilter<"userInfo"> | string
-    dateOfBirth?: DateTimeFilter<"userInfo"> | Date | string
+    dateOfBirth?: StringFilter<"userInfo"> | string
   }, "id" | "email" | "socialReason" | "StateRegistration">
 
   export type userInfoOrderByWithAggregationInput = {
@@ -3396,7 +3385,7 @@ export namespace Prisma {
     numberHouse?: IntWithAggregatesFilter<"userInfo"> | number
     complement?: StringWithAggregatesFilter<"userInfo"> | string
     numberPhone?: StringWithAggregatesFilter<"userInfo"> | string
-    dateOfBirth?: DateTimeWithAggregatesFilter<"userInfo"> | Date | string
+    dateOfBirth?: StringWithAggregatesFilter<"userInfo"> | string
   }
 
   export type ProductsWhereInput = {
@@ -3406,7 +3395,7 @@ export namespace Prisma {
     id?: IntFilter<"Products"> | number
     name?: StringFilter<"Products"> | string
     description?: StringFilter<"Products"> | string
-    measures?: FloatFilter<"Products"> | number
+    measures?: StringFilter<"Products"> | string
     price?: FloatFilter<"Products"> | number
     image?: StringFilter<"Products"> | string
   }
@@ -3427,7 +3416,7 @@ export namespace Prisma {
     NOT?: ProductsWhereInput | ProductsWhereInput[]
     name?: StringFilter<"Products"> | string
     description?: StringFilter<"Products"> | string
-    measures?: FloatFilter<"Products"> | number
+    measures?: StringFilter<"Products"> | string
     price?: FloatFilter<"Products"> | number
     image?: StringFilter<"Products"> | string
   }, "id">
@@ -3453,7 +3442,7 @@ export namespace Prisma {
     id?: IntWithAggregatesFilter<"Products"> | number
     name?: StringWithAggregatesFilter<"Products"> | string
     description?: StringWithAggregatesFilter<"Products"> | string
-    measures?: FloatWithAggregatesFilter<"Products"> | number
+    measures?: StringWithAggregatesFilter<"Products"> | string
     price?: FloatWithAggregatesFilter<"Products"> | number
     image?: StringWithAggregatesFilter<"Products"> | string
   }
@@ -3474,7 +3463,7 @@ export namespace Prisma {
     numberHouse: number
     complement: string
     numberPhone: string
-    dateOfBirth: Date | string
+    dateOfBirth: string
   }
 
   export type userInfoUncheckedCreateInput = {
@@ -3494,7 +3483,7 @@ export namespace Prisma {
     numberHouse: number
     complement: string
     numberPhone: string
-    dateOfBirth: Date | string
+    dateOfBirth: string
   }
 
   export type userInfoUpdateInput = {
@@ -3513,7 +3502,7 @@ export namespace Prisma {
     numberHouse?: IntFieldUpdateOperationsInput | number
     complement?: StringFieldUpdateOperationsInput | string
     numberPhone?: StringFieldUpdateOperationsInput | string
-    dateOfBirth?: DateTimeFieldUpdateOperationsInput | Date | string
+    dateOfBirth?: StringFieldUpdateOperationsInput | string
   }
 
   export type userInfoUncheckedUpdateInput = {
@@ -3533,7 +3522,7 @@ export namespace Prisma {
     numberHouse?: IntFieldUpdateOperationsInput | number
     complement?: StringFieldUpdateOperationsInput | string
     numberPhone?: StringFieldUpdateOperationsInput | string
-    dateOfBirth?: DateTimeFieldUpdateOperationsInput | Date | string
+    dateOfBirth?: StringFieldUpdateOperationsInput | string
   }
 
   export type userInfoCreateManyInput = {
@@ -3553,7 +3542,7 @@ export namespace Prisma {
     numberHouse: number
     complement: string
     numberPhone: string
-    dateOfBirth: Date | string
+    dateOfBirth: string
   }
 
   export type userInfoUpdateManyMutationInput = {
@@ -3572,7 +3561,7 @@ export namespace Prisma {
     numberHouse?: IntFieldUpdateOperationsInput | number
     complement?: StringFieldUpdateOperationsInput | string
     numberPhone?: StringFieldUpdateOperationsInput | string
-    dateOfBirth?: DateTimeFieldUpdateOperationsInput | Date | string
+    dateOfBirth?: StringFieldUpdateOperationsInput | string
   }
 
   export type userInfoUncheckedUpdateManyInput = {
@@ -3592,13 +3581,13 @@ export namespace Prisma {
     numberHouse?: IntFieldUpdateOperationsInput | number
     complement?: StringFieldUpdateOperationsInput | string
     numberPhone?: StringFieldUpdateOperationsInput | string
-    dateOfBirth?: DateTimeFieldUpdateOperationsInput | Date | string
+    dateOfBirth?: StringFieldUpdateOperationsInput | string
   }
 
   export type ProductsCreateInput = {
     name: string
     description: string
-    measures: number
+    measures: string
     price: number
     image: string
   }
@@ -3607,7 +3596,7 @@ export namespace Prisma {
     id?: number
     name: string
     description: string
-    measures: number
+    measures: string
     price: number
     image: string
   }
@@ -3615,7 +3604,7 @@ export namespace Prisma {
   export type ProductsUpdateInput = {
     name?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
-    measures?: FloatFieldUpdateOperationsInput | number
+    measures?: StringFieldUpdateOperationsInput | string
     price?: FloatFieldUpdateOperationsInput | number
     image?: StringFieldUpdateOperationsInput | string
   }
@@ -3624,7 +3613,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
-    measures?: FloatFieldUpdateOperationsInput | number
+    measures?: StringFieldUpdateOperationsInput | string
     price?: FloatFieldUpdateOperationsInput | number
     image?: StringFieldUpdateOperationsInput | string
   }
@@ -3633,7 +3622,7 @@ export namespace Prisma {
     id?: number
     name: string
     description: string
-    measures: number
+    measures: string
     price: number
     image: string
   }
@@ -3641,7 +3630,7 @@ export namespace Prisma {
   export type ProductsUpdateManyMutationInput = {
     name?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
-    measures?: FloatFieldUpdateOperationsInput | number
+    measures?: StringFieldUpdateOperationsInput | string
     price?: FloatFieldUpdateOperationsInput | number
     image?: StringFieldUpdateOperationsInput | string
   }
@@ -3650,7 +3639,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
-    measures?: FloatFieldUpdateOperationsInput | number
+    measures?: StringFieldUpdateOperationsInput | string
     price?: FloatFieldUpdateOperationsInput | number
     image?: StringFieldUpdateOperationsInput | string
   }
@@ -3678,17 +3667,6 @@ export namespace Prisma {
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
     not?: NestedStringFilter<$PrismaModel> | string
-  }
-
-  export type DateTimeFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeFilter<$PrismaModel> | Date | string
   }
 
   export type userInfoCountOrderByAggregateInput = {
@@ -3794,20 +3772,6 @@ export namespace Prisma {
     _max?: NestedStringFilter<$PrismaModel>
   }
 
-  export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeWithAggregatesFilter<$PrismaModel> | Date | string
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedDateTimeFilter<$PrismaModel>
-    _max?: NestedDateTimeFilter<$PrismaModel>
-  }
-
   export type FloatFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
     in?: number[]
@@ -3830,7 +3794,6 @@ export namespace Prisma {
 
   export type ProductsAvgOrderByAggregateInput = {
     id?: SortOrder
-    measures?: SortOrder
     price?: SortOrder
   }
 
@@ -3854,7 +3817,6 @@ export namespace Prisma {
 
   export type ProductsSumOrderByAggregateInput = {
     id?: SortOrder
-    measures?: SortOrder
     price?: SortOrder
   }
 
@@ -3884,10 +3846,6 @@ export namespace Prisma {
     decrement?: number
     multiply?: number
     divide?: number
-  }
-
-  export type DateTimeFieldUpdateOperationsInput = {
-    set?: Date | string
   }
 
   export type FloatFieldUpdateOperationsInput = {
@@ -3921,17 +3879,6 @@ export namespace Prisma {
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
     not?: NestedStringFilter<$PrismaModel> | string
-  }
-
-  export type NestedDateTimeFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeFilter<$PrismaModel> | Date | string
   }
 
   export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
@@ -3976,20 +3923,6 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
     _max?: NestedStringFilter<$PrismaModel>
-  }
-
-  export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeWithAggregatesFilter<$PrismaModel> | Date | string
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedDateTimeFilter<$PrismaModel>
-    _max?: NestedDateTimeFilter<$PrismaModel>
   }
 
   export type NestedFloatWithAggregatesFilter<$PrismaModel = never> = {

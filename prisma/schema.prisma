@@ -28,14 +28,14 @@ model userInfo{
   numberHouse Int
   complement String
   numberPhone String
-  dateOfBirth DateTime
+  dateOfBirth String
 }
 
 model Products{
   id Int @id @default(autoincrement())
   name String
   description String
-  measures Float
+  measures String
   price Float
   image String
 }
