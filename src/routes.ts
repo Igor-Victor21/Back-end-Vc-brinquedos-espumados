@@ -1,4 +1,5 @@
 import { Router, Request, Response  } from "express";
+import userController from "./controllers/users"
 
 const routes = Router();
 
@@ -45,5 +46,7 @@ routes.get("/funcionarios", (req: Request , res: Response):  any => {
     ],
   });
 });
+
+routes.post("/users", (req: Request, res: Response) : any => userController.create(req,res))
 
 export default routes;

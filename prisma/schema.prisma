@@ -55,28 +55,5 @@ model Products{
   measures Float
   price Float
   image String
-  // carts Cart[] 
-  // cartItems   CartItem[] 
 }
 
-model Cart{
-  id Int @id @default(autoincrement())
-  name String
-  description String
-  measures Float
-  price Float
-  quantity Int
-  image String
-  // products  Products[]
-  // cartItems   CartItem[] 
-}
-
-// model CartItem {
-//   id        Int     @id @default(autoincrement())
-//   cart      Cart    @relation(fields: [cartId], references: [id])
-//   cartId    Int
-//   product   Products @relation(fields: [productId], references: [id])
-//   productId Int
-//   quantity  Int     @default(1)  
-//   price     Float   
-// }

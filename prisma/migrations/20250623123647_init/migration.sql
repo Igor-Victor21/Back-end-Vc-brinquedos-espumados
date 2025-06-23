@@ -1,0 +1,59 @@
+-- CreateTable
+CREATE TABLE "naturalPerson" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "fullName" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "CPF" TEXT NOT NULL,
+    "CEP" TEXT NOT NULL,
+    "UF" TEXT NOT NULL,
+    "city" TEXT NOT NULL,
+    "neighborhood" TEXT NOT NULL,
+    "road" TEXT NOT NULL,
+    "numberHouse" INTEGER NOT NULL,
+    "complement" TEXT NOT NULL,
+    "numberPhone" TEXT NOT NULL,
+    "dateOfBirth" DATETIME NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "legalEntity" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "fullName" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "socialReason" TEXT NOT NULL,
+    "StateRegistration" TEXT NOT NULL,
+    "CNPJ" TEXT NOT NULL,
+    "CEP" TEXT NOT NULL,
+    "UF" TEXT NOT NULL,
+    "city" TEXT NOT NULL,
+    "neighborhood" TEXT NOT NULL,
+    "road" TEXT NOT NULL,
+    "numberHouse" INTEGER NOT NULL,
+    "complement" TEXT NOT NULL,
+    "numberPhone" TEXT NOT NULL,
+    "dateOfBirth" DATETIME NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "Products" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
+    "measures" REAL NOT NULL,
+    "price" REAL NOT NULL,
+    "image" TEXT NOT NULL
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "naturalPerson_email_key" ON "naturalPerson"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "legalEntity_email_key" ON "legalEntity"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "legalEntity_socialReason_key" ON "legalEntity"("socialReason");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "legalEntity_StateRegistration_key" ON "legalEntity"("StateRegistration");

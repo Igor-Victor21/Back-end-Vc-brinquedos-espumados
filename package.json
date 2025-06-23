@@ -11,6 +11,7 @@
   "author": "Vc Brinquedos Espumados",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.10.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "http": "^0.0.1-security"
@@ -20,6 +21,7 @@
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.3",
     "prisma": "^6.10.0",
+    "ts-node-dev": "^2.0.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
