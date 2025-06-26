@@ -4,12 +4,12 @@ CREATE TABLE "userInfo" (
     "fullName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
-    "CPF" TEXT NOT NULL,
+    "cpf" TEXT NOT NULL,
     "socialReason" TEXT NOT NULL,
-    "StateRegistration" TEXT NOT NULL,
-    "CNPJ" TEXT NOT NULL,
-    "CEP" TEXT NOT NULL,
-    "UF" TEXT NOT NULL,
+    "stateRegistration" TEXT NOT NULL,
+    "cnpj" TEXT NOT NULL,
+    "cep" TEXT NOT NULL,
+    "uf" TEXT NOT NULL,
     "city" TEXT NOT NULL,
     "neighborhood" TEXT NOT NULL,
     "road" TEXT NOT NULL,
@@ -36,4 +36,4 @@ CREATE UNIQUE INDEX "userInfo_email_key" ON "userInfo"("email");
 CREATE UNIQUE INDEX "userInfo_socialReason_key" ON "userInfo"("socialReason");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "userInfo_StateRegistration_key" ON "userInfo"("StateRegistration");
+CREATE UNIQUE INDEX "userInfo_stateRegistration_key" ON "userInfo"("stateRegistration");

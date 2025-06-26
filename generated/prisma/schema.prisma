@@ -16,12 +16,12 @@ model userInfo {
   fullName          String
   email             String @unique
   password          String
-  CPF               String
+  cpf               String
   socialReason      String @unique //razão social
-  StateRegistration String @unique // registro estadual
-  CNPJ              String
-  CEP               String
-  UF                String
+  stateRegistration String @unique // registro estadual
+  cnpj              String
+  cep               String
+  uf                String
   city              String
   neighborhood      String
   road              String

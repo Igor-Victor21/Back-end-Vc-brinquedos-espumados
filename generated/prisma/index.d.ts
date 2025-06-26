@@ -987,12 +987,12 @@ export namespace Prisma {
     fullName: string | null
     email: string | null
     password: string | null
-    CPF: string | null
+    cpf: string | null
     socialReason: string | null
-    StateRegistration: string | null
-    CNPJ: string | null
-    CEP: string | null
-    UF: string | null
+    stateRegistration: string | null
+    cnpj: string | null
+    cep: string | null
+    uf: string | null
     city: string | null
     neighborhood: string | null
     road: string | null
@@ -1007,12 +1007,12 @@ export namespace Prisma {
     fullName: string | null
     email: string | null
     password: string | null
-    CPF: string | null
+    cpf: string | null
     socialReason: string | null
-    StateRegistration: string | null
-    CNPJ: string | null
-    CEP: string | null
-    UF: string | null
+    stateRegistration: string | null
+    cnpj: string | null
+    cep: string | null
+    uf: string | null
     city: string | null
     neighborhood: string | null
     road: string | null
@@ -1027,12 +1027,12 @@ export namespace Prisma {
     fullName: number
     email: number
     password: number
-    CPF: number
+    cpf: number
     socialReason: number
-    StateRegistration: number
-    CNPJ: number
-    CEP: number
-    UF: number
+    stateRegistration: number
+    cnpj: number
+    cep: number
+    uf: number
     city: number
     neighborhood: number
     road: number
@@ -1059,12 +1059,12 @@ export namespace Prisma {
     fullName?: true
     email?: true
     password?: true
-    CPF?: true
+    cpf?: true
     socialReason?: true
-    StateRegistration?: true
-    CNPJ?: true
-    CEP?: true
-    UF?: true
+    stateRegistration?: true
+    cnpj?: true
+    cep?: true
+    uf?: true
     city?: true
     neighborhood?: true
     road?: true
@@ -1079,12 +1079,12 @@ export namespace Prisma {
     fullName?: true
     email?: true
     password?: true
-    CPF?: true
+    cpf?: true
     socialReason?: true
-    StateRegistration?: true
-    CNPJ?: true
-    CEP?: true
-    UF?: true
+    stateRegistration?: true
+    cnpj?: true
+    cep?: true
+    uf?: true
     city?: true
     neighborhood?: true
     road?: true
@@ -1099,12 +1099,12 @@ export namespace Prisma {
     fullName?: true
     email?: true
     password?: true
-    CPF?: true
+    cpf?: true
     socialReason?: true
-    StateRegistration?: true
-    CNPJ?: true
-    CEP?: true
-    UF?: true
+    stateRegistration?: true
+    cnpj?: true
+    cep?: true
+    uf?: true
     city?: true
     neighborhood?: true
     road?: true
@@ -1206,12 +1206,12 @@ export namespace Prisma {
     fullName: string
     email: string
     password: string
-    CPF: string
+    cpf: string
     socialReason: string
-    StateRegistration: string
-    CNPJ: string
-    CEP: string
-    UF: string
+    stateRegistration: string
+    cnpj: string
+    cep: string
+    uf: string
     city: string
     neighborhood: string
     road: string
@@ -1245,12 +1245,12 @@ export namespace Prisma {
     fullName?: boolean
     email?: boolean
     password?: boolean
-    CPF?: boolean
+    cpf?: boolean
     socialReason?: boolean
-    StateRegistration?: boolean
-    CNPJ?: boolean
-    CEP?: boolean
-    UF?: boolean
+    stateRegistration?: boolean
+    cnpj?: boolean
+    cep?: boolean
+    uf?: boolean
     city?: boolean
     neighborhood?: boolean
     road?: boolean
@@ -1265,12 +1265,12 @@ export namespace Prisma {
     fullName?: boolean
     email?: boolean
     password?: boolean
-    CPF?: boolean
+    cpf?: boolean
     socialReason?: boolean
-    StateRegistration?: boolean
-    CNPJ?: boolean
-    CEP?: boolean
-    UF?: boolean
+    stateRegistration?: boolean
+    cnpj?: boolean
+    cep?: boolean
+    uf?: boolean
     city?: boolean
     neighborhood?: boolean
     road?: boolean
@@ -1285,12 +1285,12 @@ export namespace Prisma {
     fullName?: boolean
     email?: boolean
     password?: boolean
-    CPF?: boolean
+    cpf?: boolean
     socialReason?: boolean
-    StateRegistration?: boolean
-    CNPJ?: boolean
-    CEP?: boolean
-    UF?: boolean
+    stateRegistration?: boolean
+    cnpj?: boolean
+    cep?: boolean
+    uf?: boolean
     city?: boolean
     neighborhood?: boolean
     road?: boolean
@@ -1305,12 +1305,12 @@ export namespace Prisma {
     fullName?: boolean
     email?: boolean
     password?: boolean
-    CPF?: boolean
+    cpf?: boolean
     socialReason?: boolean
-    StateRegistration?: boolean
-    CNPJ?: boolean
-    CEP?: boolean
-    UF?: boolean
+    stateRegistration?: boolean
+    cnpj?: boolean
+    cep?: boolean
+    uf?: boolean
     city?: boolean
     neighborhood?: boolean
     road?: boolean
@@ -1320,7 +1320,7 @@ export namespace Prisma {
     dateOfBirth?: boolean
   }
 
-  export type userInfoOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "fullName" | "email" | "password" | "CPF" | "socialReason" | "StateRegistration" | "CNPJ" | "CEP" | "UF" | "city" | "neighborhood" | "road" | "numberHouse" | "complement" | "numberPhone" | "dateOfBirth", ExtArgs["result"]["userInfo"]>
+  export type userInfoOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "fullName" | "email" | "password" | "cpf" | "socialReason" | "stateRegistration" | "cnpj" | "cep" | "uf" | "city" | "neighborhood" | "road" | "numberHouse" | "complement" | "numberPhone" | "dateOfBirth", ExtArgs["result"]["userInfo"]>
 
   export type $userInfoPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "userInfo"
@@ -1330,12 +1330,12 @@ export namespace Prisma {
       fullName: string
       email: string
       password: string
-      CPF: string
+      cpf: string
       socialReason: string
-      StateRegistration: string
-      CNPJ: string
-      CEP: string
-      UF: string
+      stateRegistration: string
+      cnpj: string
+      cep: string
+      uf: string
       city: string
       neighborhood: string
       road: string
@@ -1770,12 +1770,12 @@ export namespace Prisma {
     readonly fullName: FieldRef<"userInfo", 'String'>
     readonly email: FieldRef<"userInfo", 'String'>
     readonly password: FieldRef<"userInfo", 'String'>
-    readonly CPF: FieldRef<"userInfo", 'String'>
+    readonly cpf: FieldRef<"userInfo", 'String'>
     readonly socialReason: FieldRef<"userInfo", 'String'>
-    readonly StateRegistration: FieldRef<"userInfo", 'String'>
-    readonly CNPJ: FieldRef<"userInfo", 'String'>
-    readonly CEP: FieldRef<"userInfo", 'String'>
-    readonly UF: FieldRef<"userInfo", 'String'>
+    readonly stateRegistration: FieldRef<"userInfo", 'String'>
+    readonly cnpj: FieldRef<"userInfo", 'String'>
+    readonly cep: FieldRef<"userInfo", 'String'>
+    readonly uf: FieldRef<"userInfo", 'String'>
     readonly city: FieldRef<"userInfo", 'String'>
     readonly neighborhood: FieldRef<"userInfo", 'String'>
     readonly road: FieldRef<"userInfo", 'String'>
@@ -3207,12 +3207,12 @@ export namespace Prisma {
     fullName: 'fullName',
     email: 'email',
     password: 'password',
-    CPF: 'CPF',
+    cpf: 'cpf',
     socialReason: 'socialReason',
-    StateRegistration: 'StateRegistration',
-    CNPJ: 'CNPJ',
-    CEP: 'CEP',
-    UF: 'UF',
+    stateRegistration: 'stateRegistration',
+    cnpj: 'cnpj',
+    cep: 'cep',
+    uf: 'uf',
     city: 'city',
     neighborhood: 'neighborhood',
     road: 'road',
@@ -3282,12 +3282,12 @@ export namespace Prisma {
     fullName?: StringFilter<"userInfo"> | string
     email?: StringFilter<"userInfo"> | string
     password?: StringFilter<"userInfo"> | string
-    CPF?: StringFilter<"userInfo"> | string
+    cpf?: StringFilter<"userInfo"> | string
     socialReason?: StringFilter<"userInfo"> | string
-    StateRegistration?: StringFilter<"userInfo"> | string
-    CNPJ?: StringFilter<"userInfo"> | string
-    CEP?: StringFilter<"userInfo"> | string
-    UF?: StringFilter<"userInfo"> | string
+    stateRegistration?: StringFilter<"userInfo"> | string
+    cnpj?: StringFilter<"userInfo"> | string
+    cep?: StringFilter<"userInfo"> | string
+    uf?: StringFilter<"userInfo"> | string
     city?: StringFilter<"userInfo"> | string
     neighborhood?: StringFilter<"userInfo"> | string
     road?: StringFilter<"userInfo"> | string
@@ -3302,12 +3302,12 @@ export namespace Prisma {
     fullName?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    CPF?: SortOrder
+    cpf?: SortOrder
     socialReason?: SortOrder
-    StateRegistration?: SortOrder
-    CNPJ?: SortOrder
-    CEP?: SortOrder
-    UF?: SortOrder
+    stateRegistration?: SortOrder
+    cnpj?: SortOrder
+    cep?: SortOrder
+    uf?: SortOrder
     city?: SortOrder
     neighborhood?: SortOrder
     road?: SortOrder
@@ -3321,16 +3321,16 @@ export namespace Prisma {
     id?: number
     email?: string
     socialReason?: string
-    StateRegistration?: string
+    stateRegistration?: string
     AND?: userInfoWhereInput | userInfoWhereInput[]
     OR?: userInfoWhereInput[]
     NOT?: userInfoWhereInput | userInfoWhereInput[]
     fullName?: StringFilter<"userInfo"> | string
     password?: StringFilter<"userInfo"> | string
-    CPF?: StringFilter<"userInfo"> | string
-    CNPJ?: StringFilter<"userInfo"> | string
-    CEP?: StringFilter<"userInfo"> | string
-    UF?: StringFilter<"userInfo"> | string
+    cpf?: StringFilter<"userInfo"> | string
+    cnpj?: StringFilter<"userInfo"> | string
+    cep?: StringFilter<"userInfo"> | string
+    uf?: StringFilter<"userInfo"> | string
     city?: StringFilter<"userInfo"> | string
     neighborhood?: StringFilter<"userInfo"> | string
     road?: StringFilter<"userInfo"> | string
@@ -3338,19 +3338,19 @@ export namespace Prisma {
     complement?: StringFilter<"userInfo"> | string
     numberPhone?: StringFilter<"userInfo"> | string
     dateOfBirth?: StringFilter<"userInfo"> | string
-  }, "id" | "email" | "socialReason" | "StateRegistration">
+  }, "id" | "email" | "socialReason" | "stateRegistration">
 
   export type userInfoOrderByWithAggregationInput = {
     id?: SortOrder
     fullName?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    CPF?: SortOrder
+    cpf?: SortOrder
     socialReason?: SortOrder
-    StateRegistration?: SortOrder
-    CNPJ?: SortOrder
-    CEP?: SortOrder
-    UF?: SortOrder
+    stateRegistration?: SortOrder
+    cnpj?: SortOrder
+    cep?: SortOrder
+    uf?: SortOrder
     city?: SortOrder
     neighborhood?: SortOrder
     road?: SortOrder
@@ -3373,12 +3373,12 @@ export namespace Prisma {
     fullName?: StringWithAggregatesFilter<"userInfo"> | string
     email?: StringWithAggregatesFilter<"userInfo"> | string
     password?: StringWithAggregatesFilter<"userInfo"> | string
-    CPF?: StringWithAggregatesFilter<"userInfo"> | string
+    cpf?: StringWithAggregatesFilter<"userInfo"> | string
     socialReason?: StringWithAggregatesFilter<"userInfo"> | string
-    StateRegistration?: StringWithAggregatesFilter<"userInfo"> | string
-    CNPJ?: StringWithAggregatesFilter<"userInfo"> | string
-    CEP?: StringWithAggregatesFilter<"userInfo"> | string
-    UF?: StringWithAggregatesFilter<"userInfo"> | string
+    stateRegistration?: StringWithAggregatesFilter<"userInfo"> | string
+    cnpj?: StringWithAggregatesFilter<"userInfo"> | string
+    cep?: StringWithAggregatesFilter<"userInfo"> | string
+    uf?: StringWithAggregatesFilter<"userInfo"> | string
     city?: StringWithAggregatesFilter<"userInfo"> | string
     neighborhood?: StringWithAggregatesFilter<"userInfo"> | string
     road?: StringWithAggregatesFilter<"userInfo"> | string
@@ -3451,12 +3451,12 @@ export namespace Prisma {
     fullName: string
     email: string
     password: string
-    CPF: string
+    cpf: string
     socialReason: string
-    StateRegistration: string
-    CNPJ: string
-    CEP: string
-    UF: string
+    stateRegistration: string
+    cnpj: string
+    cep: string
+    uf: string
     city: string
     neighborhood: string
     road: string
@@ -3471,12 +3471,12 @@ export namespace Prisma {
     fullName: string
     email: string
     password: string
-    CPF: string
+    cpf: string
     socialReason: string
-    StateRegistration: string
-    CNPJ: string
-    CEP: string
-    UF: string
+    stateRegistration: string
+    cnpj: string
+    cep: string
+    uf: string
     city: string
     neighborhood: string
     road: string
@@ -3490,12 +3490,12 @@ export namespace Prisma {
     fullName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    CPF?: StringFieldUpdateOperationsInput | string
+    cpf?: StringFieldUpdateOperationsInput | string
     socialReason?: StringFieldUpdateOperationsInput | string
-    StateRegistration?: StringFieldUpdateOperationsInput | string
-    CNPJ?: StringFieldUpdateOperationsInput | string
-    CEP?: StringFieldUpdateOperationsInput | string
-    UF?: StringFieldUpdateOperationsInput | string
+    stateRegistration?: StringFieldUpdateOperationsInput | string
+    cnpj?: StringFieldUpdateOperationsInput | string
+    cep?: StringFieldUpdateOperationsInput | string
+    uf?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     neighborhood?: StringFieldUpdateOperationsInput | string
     road?: StringFieldUpdateOperationsInput | string
@@ -3510,12 +3510,12 @@ export namespace Prisma {
     fullName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    CPF?: StringFieldUpdateOperationsInput | string
+    cpf?: StringFieldUpdateOperationsInput | string
     socialReason?: StringFieldUpdateOperationsInput | string
-    StateRegistration?: StringFieldUpdateOperationsInput | string
-    CNPJ?: StringFieldUpdateOperationsInput | string
-    CEP?: StringFieldUpdateOperationsInput | string
-    UF?: StringFieldUpdateOperationsInput | string
+    stateRegistration?: StringFieldUpdateOperationsInput | string
+    cnpj?: StringFieldUpdateOperationsInput | string
+    cep?: StringFieldUpdateOperationsInput | string
+    uf?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     neighborhood?: StringFieldUpdateOperationsInput | string
     road?: StringFieldUpdateOperationsInput | string
@@ -3530,12 +3530,12 @@ export namespace Prisma {
     fullName: string
     email: string
     password: string
-    CPF: string
+    cpf: string
     socialReason: string
-    StateRegistration: string
-    CNPJ: string
-    CEP: string
-    UF: string
+    stateRegistration: string
+    cnpj: string
+    cep: string
+    uf: string
     city: string
     neighborhood: string
     road: string
@@ -3549,12 +3549,12 @@ export namespace Prisma {
     fullName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    CPF?: StringFieldUpdateOperationsInput | string
+    cpf?: StringFieldUpdateOperationsInput | string
     socialReason?: StringFieldUpdateOperationsInput | string
-    StateRegistration?: StringFieldUpdateOperationsInput | string
-    CNPJ?: StringFieldUpdateOperationsInput | string
-    CEP?: StringFieldUpdateOperationsInput | string
-    UF?: StringFieldUpdateOperationsInput | string
+    stateRegistration?: StringFieldUpdateOperationsInput | string
+    cnpj?: StringFieldUpdateOperationsInput | string
+    cep?: StringFieldUpdateOperationsInput | string
+    uf?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     neighborhood?: StringFieldUpdateOperationsInput | string
     road?: StringFieldUpdateOperationsInput | string
@@ -3569,12 +3569,12 @@ export namespace Prisma {
     fullName?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    CPF?: StringFieldUpdateOperationsInput | string
+    cpf?: StringFieldUpdateOperationsInput | string
     socialReason?: StringFieldUpdateOperationsInput | string
-    StateRegistration?: StringFieldUpdateOperationsInput | string
-    CNPJ?: StringFieldUpdateOperationsInput | string
-    CEP?: StringFieldUpdateOperationsInput | string
-    UF?: StringFieldUpdateOperationsInput | string
+    stateRegistration?: StringFieldUpdateOperationsInput | string
+    cnpj?: StringFieldUpdateOperationsInput | string
+    cep?: StringFieldUpdateOperationsInput | string
+    uf?: StringFieldUpdateOperationsInput | string
     city?: StringFieldUpdateOperationsInput | string
     neighborhood?: StringFieldUpdateOperationsInput | string
     road?: StringFieldUpdateOperationsInput | string
@@ -3674,12 +3674,12 @@ export namespace Prisma {
     fullName?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    CPF?: SortOrder
+    cpf?: SortOrder
     socialReason?: SortOrder
-    StateRegistration?: SortOrder
-    CNPJ?: SortOrder
-    CEP?: SortOrder
-    UF?: SortOrder
+    stateRegistration?: SortOrder
+    cnpj?: SortOrder
+    cep?: SortOrder
+    uf?: SortOrder
     city?: SortOrder
     neighborhood?: SortOrder
     road?: SortOrder
@@ -3699,12 +3699,12 @@ export namespace Prisma {
     fullName?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    CPF?: SortOrder
+    cpf?: SortOrder
     socialReason?: SortOrder
-    StateRegistration?: SortOrder
-    CNPJ?: SortOrder
-    CEP?: SortOrder
-    UF?: SortOrder
+    stateRegistration?: SortOrder
+    cnpj?: SortOrder
+    cep?: SortOrder
+    uf?: SortOrder
     city?: SortOrder
     neighborhood?: SortOrder
     road?: SortOrder
@@ -3719,12 +3719,12 @@ export namespace Prisma {
     fullName?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    CPF?: SortOrder
+    cpf?: SortOrder
     socialReason?: SortOrder
-    StateRegistration?: SortOrder
-    CNPJ?: SortOrder
-    CEP?: SortOrder
-    UF?: SortOrder
+    stateRegistration?: SortOrder
+    cnpj?: SortOrder
+    cep?: SortOrder
+    uf?: SortOrder
     city?: SortOrder
     neighborhood?: SortOrder
     road?: SortOrder
