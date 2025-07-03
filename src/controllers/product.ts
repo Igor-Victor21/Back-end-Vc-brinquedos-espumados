@@ -17,6 +17,14 @@ export default {
         return res.status(200).json(products)
     },
 
+    //retorna a info de um produto
+    readOne : async(req: Request, res: Response) => {
+        const id = req.params.id
+        const products = await prisma.products.findUnique({where: {id : +id}});
+        if (!products) {return res.status(404).json({ error: 'Produto não encontrado' });}
+        return res.status(200).json(products)
+    },
+
     //alterar as infos dos produtos
     update : async(req: Request, res: Response) => {
         const id = req.params.id

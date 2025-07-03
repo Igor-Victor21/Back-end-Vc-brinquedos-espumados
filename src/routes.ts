@@ -55,6 +55,7 @@ routes.delete("/users/:id", (req: Request, res: Response) : any => userControlle
 
 routes.post("/products", (req: Request, res: Response) : any => productController.create(req,res));
 routes.get("/products", (req: Request, res: Response) : any => productController.read(req,res));
+routes.get("/products/:id", (req: Request, res: Response) : any => productController.readOne(req,res));
 routes.put("/products/:id", (req: Request, res: Response) : any => productController.update(req,res));
 routes.delete("/products/:id", (req: Request, res: Response) : any => productController.delete(req,res));
 
