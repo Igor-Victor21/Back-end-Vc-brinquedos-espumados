@@ -31,9 +31,3 @@ CREATE TABLE "Products" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "userInfo_email_key" ON "userInfo"("email");
-
--- CreateIndex
-CREATE UNIQUE INDEX "userInfo_socialReason_key" ON "userInfo"("socialReason");
-
--- CreateIndex
-CREATE UNIQUE INDEX "userInfo_stateRegistration_key" ON "userInfo"("stateRegistration");

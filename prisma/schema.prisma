@@ -17,8 +17,8 @@ model userInfo{
   email String @unique
   password String
   cpf String 
-  socialReason String @unique //razão social
-  stateRegistration String @unique// registro estadual
+  socialReason String 
+  stateRegistration String 
   cnpj String
   cep String 
   uf String

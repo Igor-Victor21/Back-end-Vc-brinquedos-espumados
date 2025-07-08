@@ -3320,14 +3320,14 @@ export namespace Prisma {
   export type userInfoWhereUniqueInput = Prisma.AtLeast<{
     id?: number
     email?: string
-    socialReason?: string
-    stateRegistration?: string
     AND?: userInfoWhereInput | userInfoWhereInput[]
     OR?: userInfoWhereInput[]
     NOT?: userInfoWhereInput | userInfoWhereInput[]
     fullName?: StringFilter<"userInfo"> | string
     password?: StringFilter<"userInfo"> | string
     cpf?: StringFilter<"userInfo"> | string
+    socialReason?: StringFilter<"userInfo"> | string
+    stateRegistration?: StringFilter<"userInfo"> | string
     cnpj?: StringFilter<"userInfo"> | string
     cep?: StringFilter<"userInfo"> | string
     uf?: StringFilter<"userInfo"> | string
@@ -3338,7 +3338,7 @@ export namespace Prisma {
     complement?: StringFilter<"userInfo"> | string
     numberPhone?: StringFilter<"userInfo"> | string
     dateOfBirth?: StringFilter<"userInfo"> | string
-  }, "id" | "email" | "socialReason" | "stateRegistration">
+  }, "id" | "email">
 
   export type userInfoOrderByWithAggregationInput = {
     id?: SortOrder
