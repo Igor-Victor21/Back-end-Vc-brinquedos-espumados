@@ -38,4 +38,5 @@ model Products {
   measures    String
   price       Float
   image       String
+  section     String @default("Todos")
 }
